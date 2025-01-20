@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BK's Bookstore</title>
+    <title>Bk's Bookstore</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,16 +14,14 @@
         header {
             background-color: #6200ea;
             color: white;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         header img {
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
             height: 50px;
+            margin-right: 15px;
         }
         nav {
             background-color: #3700b3;
@@ -41,7 +39,6 @@
         }
         .container {
             padding: 20px;
-            text-align: center;
         }
         .btn {
             background-color: #6200ea;
@@ -67,12 +64,12 @@
             text-align: center;
         }
         .book-card img {
-            width: 100%;
-            height: auto;
+            max-width: 100%;
             border-radius: 5px;
+            margin-bottom: 10px;
         }
         .book-card h3 {
-            margin: 10px 0 5px;
+            margin: 10px 0;
         }
         .book-card p {
             font-size: 14px;
@@ -88,38 +85,73 @@
 </head>
 <body>
     <header>
-        <img src="http://static1.squarespace.com/static/6175a29d95d66960e45d2abf/t/6266d27b0bf2a415ee247590/1650905723490/BookBarTT+Logo-01.jpg?format=1500w" alt="BK's Bookstore Logo">
-        <h1>BK's Bookstore</h1>
+        <img src="https://static1.squarespace.com/static/6175a29d95d66960e45d2abf/t/6266d27b0bf2a415ee247590/1650905723490/BookBarTT+Logo-01.jpg?format=1500w" alt="Bk's Bookstore Logo">
+        <h1>Bk's Bookstore</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTjrNgoIRRA0NwqpVdJ3dmIGMw6yoLtfl1AS9ldff3tF9y8w/viewform?usp=header" target="_blank">Subscribe</a>
-        <a href="genres.html">Genres</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1f00u_AT_SlAPdvN80vdgryjklmdaTUVnC0ya_LrjHJPhTg/viewform?usp=header" target="_blank">Contact</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfK9wHM6eVLUYM7M6wzl7PQBYK9F269CvEALFflfgz_aVb7Rw/viewform?usp=header" target="_blank">Buy Now</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1f00u_AT_SlAPdvN80vdgryjklmdaTUVnC0ya_LrjHJPhTg/viewform?usp=header" target="_blank">Contact</a>
     </nav>
     <div class="container">
         <h2>Explore Our Collection</h2>
-        <p>Discover books from various genres. Subscribe now to unlock access to thousands of books with doorstep delivery!</p>
+        <div class="books">
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/81l3rZK4lnL.jpg" alt="Ikigai">
+                <h3>Ikigai</h3>
+                <p>A Japanese concept to live a meaningful life, revealing secrets to happiness and longevity.</p>
+            </div>
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/71g2ednj0JL.jpg" alt="The Psychology of Money">
+                <h3>The Psychology of Money</h3>
+                <p>Insights into how people think about money and make financial decisions.</p>
+            </div>
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/81yrAfi8APL.jpg" alt="Do Epic Shit">
+                <h3>Do Epic Shit</h3>
+                <p>A book by Ankur Warikoo inspiring readers to take bold actions and live their dreams.</p>
+            </div>
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/91bYsX41DVL.jpg" alt="Atomic Habits">
+                <h3>Atomic Habits</h3>
+                <p>A practical guide to building good habits and breaking bad ones for life-long success.</p>
+            </div>
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/81bsw6fnUiL.jpg" alt="Rich Dad Poor Dad">
+                <h3>Rich Dad Poor Dad</h3>
+                <p>Robert Kiyosaki shares lessons on personal finance and wealth-building strategies.</p>
+            </div>
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg" alt="The Subtle Art of Not Giving a F*ck">
+                <h3>The Subtle Art of Not Giving a F*ck</h3>
+                <p>A counterintuitive guide to living a good life by focusing on what truly matters.</p>
+            </div>
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/71qZRl1N5kL.jpg" alt="The 7 Habits of Highly Effective People">
+                <h3>The 7 Habits of Highly Effective People</h3>
+                <p>A timeless guide to personal and professional effectiveness by Stephen R. Covey.</p>
+            </div>
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/71KrN4+eg6L.jpg" alt="Think Like a Monk">
+                <h3>Think Like a Monk</h3>
+                <p>Jay Shetty offers wisdom on reducing stress and finding purpose in life.</p>
+            </div>
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/81N7FmJhbhL.jpg" alt="The Alchemist">
+                <h3>The Alchemist</h3>
+                <p>A tale of self-discovery and following one's dreams by Paulo Coelho.</p>
+            </div>
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/81O4HNft5oL.jpg" alt="Sapiens">
+                <h3>Sapiens</h3>
+                <p>A brief history of humankind by Yuval Noah Harari, exploring our evolution and culture.</p>
+            </div>
+        </div>
     </div>
-    <section class="books">
-        <!-- Book 1 -->
-        <div class="book-card">
-            <img src="https://covers.openlibrary.org/b/id/9876543-L.jpg" alt="Book Cover">
-            <h3>The Great Gatsby</h3>
-            <p>By F. Scott Fitzgerald<br>Classic novel set in the Jazz Age.</p>
-        </div>
-        <!-- Book 2 -->
-        <div class="book-card">
-            <img src="https://covers.openlibrary.org/b/id/9876544-L.jpg" alt="Book Cover">
-            <h3>1984</h3>
-            <p>By George Orwell<br>Dystopian social science fiction novel.</p>
-        </div>
-        <!-- Add more books similarly -->
-    </section>
     <footer>
-        <p>Contact us at support@bksbookstore.com | Follow us on social media @bksbookstore</p>
+        <p>Contact us at support@bksbookmania.com | Follow us on social media @bksbookmania</p>
     </footer>
 </body>
 </html>
