@@ -3,28 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookstore Features</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>BK'S BOOKSTORE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 50px;
+        }
+        nav {
+            background-color: #3700b3;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .btn {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #3700b3;
+        }
+        .features, .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="features-container">
-        <h2>Features of Our Bookstore App</h2>
-        <div class="feature">
-            <h3>AI-based Book Suggestions</h3>
-            <p>Just like Netflix recommends movies based on your preferences, our app uses AI to suggest books based on your reading habits and genre preferences. You’ll always have a personalized list ready!</p>
-        </div>
-        <div class="feature">
-            <h3>Monthly/Yearly Subscription</h3>
-            <p>Choose between a monthly or yearly subscription plan that gives you access to borrow and exchange physical books. Enjoy unlimited reads with no extra cost!</p>
-        </div>
-        <div class="feature">
-            <h3>Physical Book Delivery</h3>
-            <p>We deliver physical books right to your doorstep. All you need to do is browse our collection, pick a book, and it’ll be delivered to you as part of your subscription.</p>
-        </div>
-        <div class="feature">
-            <h3>Exclusive Book Exchange</h3>
-            <p>Exchange books with fellow members through our app. Swap the books you’ve already read and receive new ones without any hassle!</p>
-        </div>
+    <header>
+        <img src="https://static1.squarespace.com/static/6175a29d95d66960e45d2abf/t/6266d27b0bf2a415ee247590/1650905723490/BookBarTT+Logo-01.jpg?format=1500w" alt="BK'S BOOKSTORE Logo">
+        <h1>BK'S BOOKSTORE</h1>
+        <p>Your subscription-based book borrowing and exchange platform</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="genres.html">Genres</a>
+        <a href="subscription.html">Subscribe</a>
+        <a href="buy-now.html">Buy Now</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Explore, Borrow, and Exchange Books</h2>
+        <p>Subscribe now to unlock access to thousands of books with doorstep delivery!</p>
     </div>
+    <section class="features">
+        <div class="card">
+            <h3>AI Recommendations</h3>
+            <p>Get personalized book suggestions based on your reading history.</p>
+        </div>
+        <div class="card">
+            <h3>User Reviews</h3>
+            <p>Read reviews and ratings from other readers before borrowing a book.</p>
+        </div>
+        <div class="card">
+            <h3>Wishlist</h3>
+            <p>Save books to your wishlist and borrow them anytime during your subscription.</p>
+        </div>
+        <div class="card">
+            <h3>Subscription Plans</h3>
+            <p>Monthly: ₹399 | Yearly: ₹2199</p>
+        </div>
+    </section>
+    <h2 style="text-align: center; padding-top: 20px;">Our Collection</h2>
+    <section class="books">
+        <!-- Repeated Book Cards (50 Books) -->
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81l3rZK4lnL.jpg" alt="Ikigai">
+            <h3>Ikigai</h3>
+            <p>A Japanese concept to live a long and happy life by finding your purpose.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg" alt="Psychology of Money">
+            <h3>Psychology of Money</h3>
+            <p>Timeless lessons on wealth, greed, and happiness by Morgan Housel.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81j9uHHONEL.jpg" alt="Do Epic Shit">
+            <h3>Do Epic Shit</h3>
+            <p>A motivational book by Ankur Warikoo on living a meaningful life.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg" alt="Atomic Habits">
+            <h3>Atomic Habits</h3>
+            <p>Build good habits and break bad ones with proven strategies by James Clear.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81q2rSv8eML.jpg" alt="Rich Dad Poor Dad">
+            <h3>Rich Dad Poor Dad</h3>
+            <p>Learn about financial independence and wealth-building by Robert Kiyosaki.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91tb-QoJ99L.jpg" alt="The Power of Now">
+            <h3>The Power of Now</h3>
+            <p>Be present in the moment with Eckhart Tolle's spiritual guidebook.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71NSYlZihwL.jpg" alt="The Subtle Art of Not Giving a F*ck">
+            <h3>The Subtle Art of Not Giving a F*ck</h3>
+            <p>A counterintuitive guide to living a good life by Mark Manson.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81wHXvP2HnL.jpg" alt="Becoming">
+            <h3>Becoming</h3>
+            <p>Michelle Obama's powerful memoir on life, love, and leadership.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71hj30E7SiL.jpg" alt="Educated">
+            <h3>Educated</h3>
+            <p>A memoir by Tara Westover about overcoming hardship through education.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91lx+df8+HL.jpg" alt="Sapiens">
+            <h3>Sapiens</h3>
+            <p>A brief history of humankind by Yuval Noah Harari.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81jD1e-uG6L.jpg" alt="The Four Agreements">
+            <h3>The Four Agreements</h3>
+            <p>Simple wisdom for a peaceful and meaningful life by Don Miguel Ruiz.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81pHF21z8dL.jpg" alt="The Alchemist">
+            <h3>The Alchemist</h3>
+            <p>A fable about pursuing your dreams by Paulo Coelho.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91H9Rl5kQ+L.jpg" alt="Dare to Lead">
+            <h3>Dare to Lead</h3>
+            <p>Braving leadership challenges with Brene Brown.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81uwz9yfu7L.jpg" alt="Atomic Habits">
+            <h3>Atomic Habits</h3>
+            <p>Build better habits, break bad ones by James Clear.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61OTybQ2D8L.jpg" alt="The Lean Startup">
+            <h3>The Lean Startup</h3>
+            <p>Entrepreneurship strategies for building a startup by Eric Ries.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91T5gIknszL.jpg" alt="Good to Great">
+            <h3>Good to Great</h3>
+            <p>Business strategies for taking your company to the next level by Jim Collins.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91pY10V0--L.jpg" alt="The Art of War">
+            <h3>The Art of War</h3>
+            <p>Ancient Chinese wisdom for strategy and leadership by Sun Tzu.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91yY6w5QzjL.jpg" alt="Principles">
+            <h3>Principles</h3>
+            <p>Ray Dalio's guide to business and life principles.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91c6Pws2ysL.jpg" alt="Grit">
+            <h3>Grit</h3>
+            <p>The power of passion and perseverance by Angela Duckworth.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91V4z35os8L.jpg" alt="The 7 Habits of Highly Effective People">
+            <h3>The 7 Habits of Highly Effective People</h3>
+            <p>Stephen Covey's timeless principles for personal and professional success.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91HjrdMFhHL.jpg" alt="You Are a Badass">
+            <h3>You Are a Badass</h3>
+            <p>Jen Sincero's motivational book for self-growth and success.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91hvL45JjlL.jpg" alt="The Untethered Soul">
+            <h3>The Untethered Soul</h3>
+            <p>A journey beyond yourself by Michael A. Singer.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91xQz7rDo1L.jpg" alt="Outliers">
+            <h3>Outliers</h3>
+            <p>Malcolm Gladwell's study on success and opportunity.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91sD7mtvQhL.jpg" alt="Start with Why">
+            <h3>Start with Why</h3>
+            <p>Simon Sinek's method for inspiring leadership.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91LNTSkL50L.jpg" alt="The Miracle Morning">
+            <h3>The Miracle Morning</h3>
+            <p>Hal Elrod's formula for personal growth and success.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91zKJcML9rL.jpg" alt="The 48 Laws of Power">
+            <h3>The 48 Laws of Power</h3>
+            <p>Robert Greene's exploration of power dynamics and strategy.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91jE0tkxLgL.jpg" alt="Make Your Bed">
+            <h3>Make Your Bed</h3>
+            <p>Admiral William H. McRaven's life lessons from Navy SEAL training.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91kgwAT60cL.jpg" alt="The 10X Rule">
+            <h3>The 10X Rule</h3>
+            <p>Grant Cardone's blueprint for massive success.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81MGcK8X0lL.jpg" alt="Rich Dad's Increase Your Financial IQ">
+            <h3>Rich Dad's Increase Your Financial IQ</h3>
+            <p>Robert Kiyosaki's guide to mastering money.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91Ihsr9GFwL.jpg" alt="The Secret">
+            <h3>The Secret</h3>
+            <p>The Law of Attraction by Rhonda Byrne.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81vS2j8+djL.jpg" alt="The Magic of Thinking Big">
+            <h3>The Magic of Thinking Big</h3>
+            <p>David Schwartz's path to success and achievement.</p>
+        </div>
+        <div class="card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91+fOHFvsdL.jpg" alt="The 5 AM Club">
+            <h3>The 5 AM Club</h3>
+            <p>Robin Sharma's secret to success through early rising.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 BK'S Bookstore. All rights reserved.</p>
+    </footer>
 </body>
 </html>
