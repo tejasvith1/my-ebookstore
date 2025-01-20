@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genres - BK's Book Mania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #3700b3;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .genre-section {
+            margin: 20px 0;
+        }
+        .genre-title {
+            background-color: #3700b3;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .book-card {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .book-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BK's Book Mania - Explore Genres</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="subscription.html">Subscribe</a>
+        <a href="genres.html">Genres</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="genre-section">
+            <h2 class="genre-title">Fiction</h2>
+            <div class="books">
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/81af+MCATTL.jpg" alt="The Great Gatsby">
+                    <h3>The Great Gatsby</h3>
+                    <p>Author: F. Scott Fitzgerald</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/71kxa1-0AfL.jpg" alt="1984">
+                    <h3>1984</h3>
+                    <p>Author: George Orwell</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/81WcnNQ-TBL.jpg" alt="To Kill a Mockingbird">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p>Author: Harper Lee</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/91lQY9EClBL.jpg" alt="Pride and Prejudice">
+                    <h3>Pride and Prejudice</h3>
+                    <p>Author: Jane Austen</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/91uwocAMtSL.jpg" alt="The Catcher in the Rye">
+                    <h3>The Catcher in the Rye</h3>
+                    <p>Author: J.D. Salinger</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="genre-section">
+            <h2 class="genre-title">Non-Fiction</h2>
+            <div class="books">
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/81WojUxbbFL.jpg" alt="Educated">
+                    <h3>Educated</h3>
+                    <p>Author: Tara Westover</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/713jIoMO3UL.jpg" alt="Sapiens">
+                    <h3>Sapiens</h3>
+                    <p>Author: Yuval Noah Harari</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/71g2ednj0JL.jpg" alt="Atomic Habits">
+                    <h3>Atomic Habits</h3>
+                    <p>Author: James Clear</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/81vpsIs58WL.jpg" alt="The Power of Habit">
+                    <h3>The Power of Habit</h3>
+                    <p>Author: Charles Duhigg</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/91bYsX41DVL.jpg" alt="Thinking, Fast and Slow">
+                    <h3>Thinking, Fast and Slow</h3>
+                    <p>Author: Daniel Kahneman</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

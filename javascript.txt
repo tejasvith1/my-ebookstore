@@ -1,0 +1,20 @@
+function submitOrder(event) {
+    event.preventDefault();  // Prevent page reload
+    const customerName = document.getElementById('name').value;
+    const shippingAddress = document.getElementById('address').value;
+    const paymentMethod = document.getElementById('payment-method').value;
+
+    // Here we simulate saving the data (like in a backend database)
+    console.log('Order Placed: ', {
+        customerName,
+        shippingAddress,
+        paymentMethod
+    });
+
+    // Show an alert with the order summary
+    alert(`Order Placed Successfully!
+    Name: ${customerName}
+    Address: ${shippingAddress}
+    Payment Method: ${paymentMethod}`);
+}
+

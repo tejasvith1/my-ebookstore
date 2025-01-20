@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore - Buy Now</title>
+    <link rel="stylesheet" href="styles.css"> <!-- For external CSS (Optional) -->
+</head>
+<body>
+
+    <h1>Bookstore - Buy Now</h1>
+    
+    <!-- Book details -->
+    <div class="book-details">
+        <h2>Book Title: The Great Gatsby</h2>
+        <p><strong>Author:</strong> F. Scott Fitzgerald</p>
+        <p><strong>Price:</strong> $15.99</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <!-- Order Summary Section -->
+    <div id="order-summary">
+        <h3>Order Summary</h3>
+        <p><strong>Book Title:</strong> <span id="book-title">The Great Gatsby</span></p>
+        <p><strong>Price:</strong> $15.99</p>
+        
+        <form id="order-form">
+            <h4>Customer Information</h4>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cod">Cash on Delivery</option>
+            </select><br><br>
+            
+            <button type="submit" onclick="submitOrder(event)">Submit Order</button>
+        </form>
+    </div>
+
+    <script>
+        // Function to handle adding items to cart (simulated)
+        function addToCart() {
+            alert("Item added to cart!");
+            // You could update a shopping cart here if needed
+        }
+
+        // Function to handle form submission (this is where data would be sent to backend)
+        function submitOrder(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Collecting form data
+            const customerName = document.getElementById('name').value;
+            const shippingAddress = document.getElementById('address').value;
+            const paymentMethod = document.getElementById('payment-method').value;
+
+            // Example of what you might send to the backend (using Fetch API for example)
+            fetch('https://your-backend-api-url.com/place-order', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    customerName: customerName,
+                    shippingAddress: shippingAddress,
+                    paymentMethod: paymentMethod,
+                    bookTitle: 'The Great Gatsby',
+                    bookPrice: 15.99
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert("Order placed successfully!");
+                console.log(data);
+            })
+            .catch(error => {
+                alert("Error placing the order. Please try again.");
+                console.error(error);
+            });
+        }
+    </script>
+
+</body>
+</html>
