@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BK's Book Mania</title>
+    <title>BK's Book Mania Subscription</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,10 +12,15 @@
             background-color: #f4f4f9;
         }
         header {
+            display: flex;
+            align-items: center;
             background-color: #6200ea;
             color: white;
-            padding: 10px 0;
-            text-align: center;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 50px;
+            margin-right: 20px;
         }
         nav {
             background-color: #3700b3;
@@ -47,7 +52,7 @@
         }
         .books {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             padding: 20px;
         }
@@ -67,60 +72,145 @@
             margin: 10px 0;
         }
         .book-card p {
+            font-size: 14px;
             color: #555;
+        }
+        footer {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="https://via.placeholder.com/150x50?text=BK's+Book+Mania" alt="BK's Book Mania Logo">
         <h1>Welcome to BK's Book Mania</h1>
-        <p>Your subscription-based book borrowing and exchange platform</p>
     </header>
     <nav>
-        <a href="#home">Home</a>
+        <a href="#">Home</a>
         <a href="#features">Features</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTjrNgoIRRA0NwqpVdJ3dmIGMw6yoLtfl1AS9ldff3tF9y8w/viewform?usp=header" target="_blank">Subscribe</a>
-        <a href="#genres">Genres</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1f00u_AT_SlAPdvN80vdgryjklmdaTUVnC0ya_LrjHJPhTg/viewform?usp=header" target="_blank">Contact</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfK9wHM6eVLUYM7M6wzl7PQBYK9F269CvEALFflfgz_aVb7Rw/viewform?usp=header" target="_blank">Buy Now</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1f00u_AT_SlAPdvN80vdgryjklmdaTUVnC0ya_LrjHJPhTg/viewform?usp=header" target="_blank">Contact</a>
     </nav>
     <div class="container">
         <h2>Explore, Borrow, and Exchange Books</h2>
         <p>Subscribe now to unlock access to thousands of books with doorstep delivery!</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTjrNgoIRRA0NwqpVdJ3dmIGMw6yoLtfl1AS9ldff3tF9y8w/viewform?usp=header" class="btn" target="_blank">Subscribe Now</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfK9wHM6eVLUYM7M6wzl7PQBYK9F269CvEALFflfgz_aVb7Rw/viewform?usp=header" class="btn" target="_blank">Buy Now</a>
     </div>
-    <section id="books" class="books">
+    <section class="books">
+        <!-- Fiction Books -->
         <div class="book-card">
-            <img src="https://via.placeholder.com/150" alt="Book 1">
-            <h3>The Great Gatsby</h3>
-            <p>F. Scott Fitzgerald | Fiction</p>
-        </div>
-        <div class="book-card">
-            <img src="https://via.placeholder.com/150" alt="Book 2">
+            <img src="https://covers.openlibrary.org/b/id/8165260-L.jpg" alt="To Kill a Mockingbird">
             <h3>To Kill a Mockingbird</h3>
-            <p>Harper Lee | Fiction</p>
+            <p>A classic novel of racism and injustice in the deep South.</p>
         </div>
         <div class="book-card">
-            <img src="https://via.placeholder.com/150" alt="Book 3">
-            <h3>Atomic Habits</h3>
-            <p>James Clear | Self-Help</p>
+            <img src="https://covers.openlibrary.org/b/id/8226191-L.jpg" alt="1984">
+            <h3>1984</h3>
+            <p>A dystopian novel depicting a totalitarian regime.</p>
         </div>
         <div class="book-card">
-            <img src="https://via.placeholder.com/150" alt="Book 4">
+            <img src="https://covers.openlibrary.org/b/id/8235263-L.jpg" alt="Pride and Prejudice">
+            <h3>Pride and Prejudice</h3>
+            <p>A romantic novel about manners and marriage in 19th-century England.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8225326-L.jpg" alt="The Great Gatsby">
+            <h3>The Great Gatsby</h3>
+            <p>A critique of the American Dream set in the Roaring Twenties.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8244255-L.jpg" alt="Moby Dick">
+            <h3>Moby Dick</h3>
+            <p>An epic tale of obsession and revenge at sea.</p>
+        </div>
+
+        <!-- Non-Fiction Books -->
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8275560-L.jpg" alt="Sapiens">
             <h3>Sapiens</h3>
-            <p>Yuval Noah Harari | History</p>
+            <p>A brief history of humankind and its evolution.</p>
         </div>
         <div class="book-card">
-            <img src="https://via.placeholder.com/150" alt="Book 5">
-            <h3>The Lean Startup</h3>
-            <p>Eric Ries | Business</p>
+            <img src="https://covers.openlibrary.org/b/id/8281520-L.jpg" alt="Educated">
+            <h3>Educated</h3>
+            <p>A memoir of resilience and the power of education.</p>
         </div>
-        <!-- Add 20 more books in similar format -->
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8253640-L.jpg" alt="The Power of Habit">
+            <h3>The Power of Habit</h3>
+            <p>Exploring how habits shape our lives and how to change them.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8287215-L.jpg" alt="Becoming">
+            <h3>Becoming</h3>
+            <p>Michelle Obama's journey and the lessons she learned along the way.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8263420-L.jpg" alt="Atomic Habits">
+            <h3>Atomic Habits</h3>
+            <p>Small changes leading to remarkable results.</p>
+        </div>
+
+        <!-- Mystery Books -->
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8206250-L.jpg" alt="Gone Girl">
+            <h3>Gone Girl</h3>
+            <p>A thriller that delves into the complexities of marriage.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8234526-L.jpg" alt="The Girl with the Dragon Tattoo">
+            <h3>The Girl with the Dragon Tattoo</h3>
+            <p>A gripping mystery filled with twists and turns.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8245560-L.jpg" alt="Big Little Lies">
+            <h3>Big Little Lies</h3>
+            <p>A tale of friendships, secrets, and betrayals.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8213246-L.jpg" alt="The Silent Patient">
+            <h3>The Silent Patient</h3>
+            <p>A psychological thriller about a woman's act of violence against her husband.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8225213-L.jpg" alt="In the Woods">
+            <h3>In the Woods</h3>
+            <p>A detective unravels a mystery from his past.</p>
+        </div>
+
+        <!-- Science Fiction Books -->
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8245626-L.jpg" alt="Dune">
+            <h3>Dune</h3>
+            <p>A science fiction epic about power, politics, and the desert planet Arrakis.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8256712-L.jpg" alt="Ender's Game">
+            <h3>Ender's Game</h3>
+            <p>A young boy trains to become a military commander in space.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8264236-L.jpg" alt="The Martian">
+            <h3>The Martian</h3>
+            <p>A stranded astronaut's struggle to survive on Mars.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8232425-L.jpg" alt="Neuromancer">
+            <h3>Neuromancer</h3>
+            <p>A cyberpunk novel that defined a genre.</p>
+        </div>
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8223213-L.jpg" alt="Snow Crash">
+            <h3>Snow Crash</h3>
+            <p>A visionary tale of virtual reality and a dystopian future.</p>
+        </div>
     </section>
-    <footer id="contact" style="background-color: #6200ea; color: white; padding: 10px; text-align: center;">
+    <footer>
         <p>Contact us at support@bksbookmania.com | Follow us on social media @bksbookmania</p>
-        <p>Live Chat: <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1f00u_AT_SlAPdvN80vdgryjklmdaTUVnC0ya_LrjHJPhTg/viewform?usp=header" target="_blank" style="color: white; text-decoration: underline;">Click Here</a></p>
+        <p>&copy; 2025 BK's Book Mania</p>
     </footer>
 </body>
 </html>
