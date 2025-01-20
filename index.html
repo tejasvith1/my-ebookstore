@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BK's Book Mania Subscription</title>
+    <title>BK's Book Mania | Your Online Bookstore</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,8 +14,11 @@
         header {
             background-color: #6200ea;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+        }
+        header img {
+            height: 80px;
         }
         nav {
             background-color: #3700b3;
@@ -45,26 +48,53 @@
         .btn:hover {
             background-color: #3700b3;
         }
-        .features {
+        .books {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             padding: 20px;
         }
-        .feature-card {
+        .book-card {
             background: white;
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        .feature-card h3 {
-            margin-top: 0;
+        .book-card img {
+            max-width: 100%;
+            height: 200px;
+            border-radius: 5px;
+        }
+        .book-card h3 {
+            margin: 10px 0;
+        }
+        .features {
+            padding: 20px;
+        }
+        .feature-detail {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to BK's Book Mania</h1>
+        <img src="logo.png" alt="BK's Book Mania Logo">
+        <h1>BK's Book Mania</h1>
         <p>Your subscription-based book borrowing and exchange platform</p>
     </header>
     <nav>
@@ -73,45 +103,57 @@
         <a href="subscription.html">Subscribe</a>
         <a href="genres.html">Genres</a>
         <a href="contact.html">Contact</a>
-        <a href="buy-now.html">Buy Now</a> <!-- Added Buy Now Link -->
     </nav>
     <div class="container">
-        <h2>Explore, Borrow, and Exchange Books</h2>
-        <p>Subscribe now to unlock access to thousands of books with doorstep delivery!</p>
-        <!-- Redirect to Google Form when clicked -->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfK9wHM6eVLUYM7M6wzl7PQBYK9F269CvEALFflfgz_aVb7Rw/viewform?usp=header" class="btn" target="_blank">Subscribe Now</a>
-        <!-- Optionally, you can add another Buy Now button here -->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfK9wHM6eVLUYM7M6wzl7PQBYK9F269CvEALFflfgz_aVb7Rw/viewform?usp=header" class="btn" target="_blank">Buy Now</a> <!-- Added Buy Now Button -->
+        <h2>Our Collection</h2>
+        <p>Browse through our carefully curated collection of books across various genres!</p>
+        <div class="books">
+            <div class="book-card">
+                <img src="book1.jpg" alt="Book 1">
+                <h3>The Great Gatsby</h3>
+                <p>By F. Scott Fitzgerald</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfK9wHM6eVLUYM7M6wzl7PQBYK9F269CvEALFflfgz_aVb7Rw/viewform?usp=header" class="btn" target="_blank">Borrow Now</a>
+            </div>
+            <div class="book-card">
+                <img src="book2.jpg" alt="Book 2">
+                <h3>To Kill a Mockingbird</h3>
+                <p>By Harper Lee</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfK9wHM6eVLUYM7M6wzl7PQBYK9F269CvEALFflfgz_aVb7Rw/viewform?usp=header" class="btn" target="_blank">Borrow Now</a>
+            </div>
+            <div class="book-card">
+                <img src="book3.jpg" alt="Book 3">
+                <h3>1984</h3>
+                <p>By George Orwell</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfK9wHM6eVLUYM7M6wzl7PQBYK9F269CvEALFflfgz_aVb7Rw/viewform?usp=header" class="btn" target="_blank">Borrow Now</a>
+            </div>
+        </div>
     </div>
-    <section id="features" class="features">
-        <div class="feature-card">
+    <div class="features">
+        <h2>Our Special Features</h2>
+        <div class="feature-detail">
             <h3>Advanced Book Search</h3>
             <p>Filter books by genre, author, and popularity. Find your next favorite read easily.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-detail">
             <h3>AI Recommendations</h3>
             <p>Get personalized book suggestions based on your reading history.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-detail">
             <h3>User Reviews & Ratings</h3>
-            <p>Read reviews and ratings from other readers before borrowing a book.</p>
+            <p>Read what others think about a book. "A mesmerizing tale!" - The Book Journal.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-detail">
             <h3>Wishlist</h3>
-            <p>Save books to your wishlist and borrow them anytime during your subscription.</p>
+            <p>Save your desired books to a wishlist and borrow them anytime during your subscription.</p>
         </div>
-        <div class="feature-card">
-            <h3>Nearby Bookstores</h3>
-            <p>Discover and connect with bookstores near you for additional services.</p>
-        </div>
-        <div class="feature-card">
+        <div class="feature-detail">
             <h3>Live Chat Support</h3>
-            <p>Need help? Use our live chat to get instant support.</p>
+            <p>Have queries? Our live chat feature connects you instantly with support staff.</p>
         </div>
-    </section>
-    <footer id="contact" style="background-color: #6200ea; color: white; padding: 10px; text-align: center;">
-        <p>Contact us at support@bksbookmania.com | Follow us on social media @bksbookmania</p>
+    </div>
+    <footer>
+        <p>Contact us at <a href="mailto:support@bksbookmania.com">support@bksbookmania.com</a></p>
+        <p>Follow us on social media @bksbookmania</p>
     </footer>
 </body>
 </html>
-
