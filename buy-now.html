@@ -77,6 +77,8 @@
             .then(data => {
                 alert("Order placed successfully!");
                 console.log(data);
+                // Redirect to Google Form after successful order submission
+                window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfK9wHM6eVLUYM7M6wzl7PQBYK9F269CvEALFflfgz_aVb7Rw/viewform?usp=header";
             })
             .catch(error => {
                 alert("Error placing the order. Please try again.");
